@@ -16,7 +16,7 @@ class School
       @roster[grade] << name
     else 
       @roster[grade] = []
-      ROSTER[grade] << name
+      @roster[grade] << name
     end
   end
   
