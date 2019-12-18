@@ -24,11 +24,11 @@ class School
   end
   
   def sort 
-    
-    @roster.each do |grade, names|
-      @roster[grade].sort
-    end
-    @roster.sort
-    @roster
+    @roster = @roster.sort_by { |key| key }.to_h
+    # @roster.each do |grade, names|
+    #   @roster[grade].sort
+    # end
+    # @roster.sort
+    # @roster
   end
 end
