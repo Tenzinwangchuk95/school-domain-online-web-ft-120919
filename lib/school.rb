@@ -12,7 +12,8 @@ class School
   end
   
   def add_student(name, grade)
-    #ROSTER[grade] = []
+    if ROSTER.include?[grade]
+    ROSTER[grade] = []
     ROSTER[grade] << name
   end
   
