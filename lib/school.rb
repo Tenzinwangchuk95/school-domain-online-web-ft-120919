@@ -29,5 +29,6 @@ class School
       @roster[grade].sort
     end
     @roster.sort
+    @roster
   end
 end
